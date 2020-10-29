@@ -1,5 +1,3 @@
-��# threader
-
 A Customized Roleplay / Communitive Writing Chatroom
 
 Eastern Collage, Advanced Mobile Development Class Project
@@ -13,3 +11,15 @@ Featuring:
 <li>✖ saves threads to database</li>
 <li>✖ password on entering certain rooms</li>
 </ul>
+
+
+
+Users:
+  - Can access without logging in, so users can use whatever Muse name they want in multiple tabs
+  - users need a password to access certain threads, such as private threads and NSFW threads
+
+Database:
+  - muse
+  - time
+  - reply
+  - password

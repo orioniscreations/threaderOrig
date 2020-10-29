@@ -11,6 +11,20 @@
 </head>
 
 <body>
+
+  <!-- navbar -->
+  <!-- navbar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Logs</a>
+    <a href="#">Muses</a>
+    <a href="#">Conact</a>
+  </div>
+
+  <button class="openbtn" onclick="openNav()">☰</button>
+
+  <!-- main -->
   <div class="chat-container">
     <header class="chat-header">
       <img src="/img/Threader.png" alt="" style="max-width: 50%;">
@@ -35,9 +49,16 @@
     </div>
   </div>
 
+  <!-- footer -->
+  <div id="footer"><b>©Orionis Creations</b>
+    <br>
+    Applications Development - Advanced Mobile Development, 2020</div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.1/qs.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="js/main.js"></script>
+  <script src="/js/navbar.js"></script>
+
 </body>
 
 </html>
