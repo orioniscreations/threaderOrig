@@ -13,12 +13,13 @@ const {
 
 const socket = io();
 
-//  when user joins room:
-socket.emit('joinRoom', {
-  username,
-  room
-});
-
+socket.on('connect', () => {
+  //  when user joins room:
+  socket.emit('joinRoom', {
+    username,
+    room
+  });
+})
 // get room and users
 socket.on('roomUsers', ({
   room,
@@ -34,6 +35,13 @@ socket.on('message', message => {
 
   // scroll down
   chatMessages.scrollTop = chatMessages.scrollHeight;
+});
+
+// message from server
+socket.on('msglist', messages => {
+  console.log({
+    messages
+  });
 });
 
 // message submit:

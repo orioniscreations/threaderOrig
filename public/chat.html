@@ -7,23 +7,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
-  <title>ChatCord App</title>
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <title>Threader</title>
 </head>
 
 <body>
 
   <!-- navbar -->
-  <!-- navbar -->
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#">About</a>
-    <a href="#">Logs</a>
-    <a href="#">Muses</a>
-    <a href="#">Conact</a>
+    <a href="/index.html">
+      <img src="/img/Threader.png" alt="" style="max-width: 100%; padding: 20px; margin-bottom: 50px;">
+    </a>
+    <ul>
+      <li>
+        <a id="myBtn" style="cursor: pointer">About</a>
+      </li>
+    </ul>
+    <a href="/plots.html">Plots</a>
+    <a href="https://discord.gg/kKQ4nf">Discord</a>
+
+    <div id="contact">
+      <a href="https://github.com/orioniscreations?tab=repositories">
+        <h5>Orionis Creataions</h5>
+      </a>
+
+
+
+    </div>
+
   </div>
 
   <button class="openbtn" onclick="openNav()">☰</button>
-
   <!-- main -->
   <div class="chat-container">
     <header class="chat-header">
@@ -53,6 +69,108 @@
   <div id="footer"><b>©Orionis Creations</b>
     <br>
     Applications Development - Advanced Mobile Development, 2020</div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h1>About</h1>
+      </div>
+      <div class="modal-body">
+        <p>A dedicated chatroom for plotted roleplays for the following characters:</p>
+        <br>
+        <div id="cards">
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://aresite.tumblr.com/" target="blank">
+              <img src="/img/aresIcon.jpg" alt="Ares" style="width:100%; ">
+              <div class="card-container">
+                <h4><b>Ares</b></h4>
+                <p>An Isekai Pokemon OC</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://regalis-solveig.tumblr.com/" target="blank">
+              <img src="/img/kidaIcon.jpg" alt="Kida" style="width:100%">
+              <div class="card-container">
+                <h4><b>Kida Solveig</b></h4>
+                <p>Princess of the Yggdran Empire</p>
+              </div>
+            </a>
+          </div>
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://regalis-solveig.tumblr.com/" target="blank">
+              <img src="/img/youtaIcon.jpg" alt="Youta" style="width:100%">
+              <div class="card-container">
+                <h4><b>Youta Solveig</b></h4>
+                <p>Prince of Galar</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://deathyless.tumblr.com/" target="blank">
+              <img src="/img/mikaIcon.jpg" alt="Mika" style="width:100%">
+              <div class="card-container">
+                <h4><b>Mikado Kihell (Mika)</b></h4>
+                <p>One who formed a pact with Death</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://ao-sky-dreams.tumblr.com/" target="blank">
+              <img src="/img/soraIcon.jpg" alt="Sora" style="width:100%">
+              <div class="card-container">
+                <h4><b>Aozora Ueno (Sora)</b></h4>
+                <p>Apprentice Professer</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://hobard-knights.tumblr.com/" target="blank">
+              <img src="/img/bryceIcon.jpg" alt="npcs" style="width:100%">
+              <div class="card-container">
+                <h4><b>Bryce and Alys Hubard</b></h4>
+                <p>Villains</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://hobard-knights.tumblr.com/" target="blank">
+              <img src="/img/josieIcon.jpg" alt="Josie" style="width:100%">
+              <div class="card-container">
+                <h4><b>Jocelyn</b></h4>
+                <p>Loyal Knight</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" style="float: left; height: 300px;">
+            <a href="https://esquire-shield.tumblr.com/" target="blank">
+              <img src="/img/thanionIcon.jpg" alt="Thanion" style="width:100%">
+              <div class="card-container">
+                <h4><b>Thanion Postwick</b></h4>
+                <p>The Crown Prince's Retainer</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <p style="text-align: right; padding: 20px">munned by: AJ</p>
+    </div>
+
+
+  </div>
+
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.1/qs.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>

@@ -1,0 +1,85 @@
+.plotCont {
+  background-color: rgb(231, 253, 255);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 700px;
+
+
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(211, 211, 211);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5a0000;
+}
+
+.plotTitle {
+  padding: 5px;
+  background-image: url("/img/sg-pokemon-sworld-shield-game-category-banner1.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.plotImg {
+  height: 120px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.plotBody {
+
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow-y: scroll; */
+  height: 600px;
+
+
+}
+
+.accordion {
+  background-color: rgb(161, 171, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #396bba;
+}
+
+.panel {
+  padding: 20px;
+  display: none;
+  background-color: rgb(244, 253, 255);
+  overflow: hidden;
+}
